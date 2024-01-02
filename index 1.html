@@ -1,85 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Predictive Policing</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style2.css" />
     <script src="script 11.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<!-- <div id="map" style="height: 400px;"></div> -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- <div id="map" style="height: 400px;"></div> -->
+  </head>
 
-</head>
-    
-<body>
-    <header class="hero" style="height: 400px">
-        <img src="haryana police.jpg">
-        <div class="container" >
-            <h1>Predictive Policing for Drug Trafficking</h1>
-            <p>Analyzing historical crime data to predict potential locations or routes for drug trafficking using AI-ML.</p>
-            <a href="#contact" class="cta-button">Contact Us</a>
+  <body>
+    <!-- NavBar -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-logo">
+          <img src="haryana-plice-logo-BC5F526ACF-seeklogo.com.png" alt="" />
         </div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="">Learning</a></li>
+            <li><a href="">Laws</a></li>
+            <li><a href="">Trafficking Routes</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <section class="features">
+    <main>
+      <section class="hero">
+        <div>
+          <img src="haryana police.jpg" />
+        </div>
+        <div class="hero-container">
+          <h1>Predictive Policing for Drug Trafficking</h1>
+          <p>
+            Analyzing historical crime data to predict potential locations or
+            routes for drug trafficking using AI-ML.
+          </p>
+          <a href="#contact" class="cta-button">Contact Us</a>
+        </div>
+      </section>
+
+      <section class="features">
         <h2>Key Features</h2>
         <div class="feature-container">
-            <div class="feature">
-                <h3>Data Analysis</h3>
-                <p>Utilize advanced data analysis techniques to understand historical crime patterns.</p>
-            </div>
-            <div class="feature">
-                <h3>AI-ML Predictions</h3>
-                <p>Implement machine learning models to predict potential locations and routes for drug trafficking.</p>
-            </div>
-            <div class="feature">
-                <h3>Law Enforcement Collaboration</h3>
-                <p>Provide actionable insights to law enforcement agencies for further investigations.</p>
-            </div>
-            <div class="feature">
-                <h3>Map Interfaces</h3>
-                <p>Explore high-risk areas using interactive map interfaces with color-coded prediction results.</p>
-            </div>
-            <div class="feature">
-                <h3>Real-time Processing</h3>
-                <p>Experience real-time processing animations to stay informed when the system is analyzing data.</p>
-            </div>
-            <div class="feature">
-                <h3>Multilingual Support</h3>
-                <p>Access the website in multiple languages to enhance user experience.</p>
-            </div>
+          <div class="feature">
+            <h3>Data Analysis</h3>
+            <p>
+              Utilize advanced data analysis techniques to understand historical
+              crime patterns.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>AI-ML Predictions</h3>
+            <p>
+              Implement machine learning models to predict potential locations
+              and routes for drug trafficking.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Law Enforcement Collaboration</h3>
+            <p>
+              Provide actionable insights to law enforcement agencies for
+              further investigations.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Map Interfaces</h3>
+            <p>
+              Explore high-risk areas using interactive map interfaces with
+              color-coded prediction results.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Real-time Processing</h3>
+            <p>
+              Experience real-time processing animations to stay informed when
+              the system is analyzing data.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Multilingual Support</h3>
+            <p>
+              Access the website in multiple languages to enhance user
+              experience.
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="contact" class="contact">
+      <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>Interested in our services? Reach out to us for more information.</p>
-            <form action="#" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+          <h2>Contact Us</h2>
+          <p>
+            Interested in our services? Reach out to us for more information.
+          </p>
+          <form action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit">Submit</button>
-                
-
-            </form>
+            <button type="submit">Submit</button>
+          </form>
         </div>
-    </section>
+      </section>
+    </main>
+
     <div class="map"></div>
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2023 Predictive Policing</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2023 Predictive Policing</p>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>

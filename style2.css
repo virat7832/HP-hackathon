@@ -1,9 +1,54 @@
-/* Your styles go here */
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+}
+
+/* Navbar */
+.navbar{
+ display: inline-flex;
+ background: #34495e;
+ width: 100vw;
+ height: 60px;
+ align-items: center;
+ justify-content: center;
+ gap: 50px;
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 500;
+}
+
+.nav-logo img{
+    width: 40px;
+    height: 40px;
+}
+
+.nav-links{
+    display: inline-flex;
+    gap: 20px;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #fafafa;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+    letter-spacing: .5px;
+}
+
+.nav-links li a:hover{
+    color: #8fd2ff;
+    font-size: 1.01rem;
 }
 
 .container {
@@ -16,8 +61,26 @@ body {
 .hero {
     background-color: #3498db;
     color: #ffffff;
-    text-align: center;
-    padding: 100px 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero img{
+    width: 300px;
+    height: 100px;
 }
 
 .hero h1 {
