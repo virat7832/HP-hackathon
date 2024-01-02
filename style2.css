@@ -41,10 +41,12 @@ body {
 }
 
 .features {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: hwb(192 93% 5%);
-    padding: 60px;
-    padding-top: 15px;
-    height: 550px;
+    padding: 15px 30px 50px 30px;
+    height: fit-content;
 }
 
 .features h2 {
@@ -52,9 +54,20 @@ body {
     font-size: 36px;
 }
 
-.feature {
-    text-align: center;
+.feature{
     margin-top: 20px;
+    border: 1px solid blueviolet;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.feature-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .contact {
@@ -103,8 +116,9 @@ section{
     grid-template-columns: minmax(500px,1250px);
     height: 100vh;
 }
-.features ,#contact{
+#contact{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
